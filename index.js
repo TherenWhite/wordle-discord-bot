@@ -444,9 +444,9 @@ client.once('ready', async () => {
     
     console.log('Successfully reloaded application (/) commands.');
     
-    // Schedule the daily reset at 11:59 PM MST
-    // MST is UTC-7, so 11:59 PM MST = 6:59 AM UTC
-    cron.schedule('59 6 * * *', endDay);
+    // Schedule the daily reset at  3:45 PM MST
+    // MST is UTC-7, so 3:45 PM MST = 10:45 PM UTC
+    cron.schedule('45 22 * * *', endDay);
     
     // Debug message
     console.log(`Current word: ${currentWord}`);
