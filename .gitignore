@@ -1,0 +1,8 @@
+# dependencies
+node_modules/
+
+# local state
+gameState.json
+
+# environment
+.env
