@@ -552,4 +552,7 @@ client.on('messageCreate', async message => {
 });
 
 // Login to Discord
+console.log('DEBUG: token length =', process.env.DISCORD_TOKEN?.length);
+console.log('DEBUG: token starts =', process.env.DISCORD_TOKEN?.slice(0, 5));
+
 client.login(process.env.DISCORD_TOKEN);
