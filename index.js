@@ -445,7 +445,11 @@ client.once('ready', async () => {
     console.log('Successfully reloaded application (/) commands.');
     
     // new day at 3:50pm
-    cron.schedule('50 22 * * *', endDay);
+    cron.schedule(
+      '0 15 * * *',    // minute 0, hour 15 (3 PM), every day
+      endDay,
+      { timezone: 'America/Phoenix' }
+    );
     
     // Debug message
     console.log(`Current word: ${currentWord}`);
