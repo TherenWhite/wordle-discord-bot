@@ -444,9 +444,9 @@ client.once('ready', async () => {
     
     console.log('Successfully reloaded application (/) commands.');
     
-    // new day at 3pm
+    // new day at 3:20pm
     cron.schedule(
-      '15 15 * * *',    // minute 0, hour 15 (3 PM), every day
+      '20 15 * * *',    // minute 0, hour 15 (3 PM), every day
       endDay,
       { timezone: 'America/Phoenix' }
     );
