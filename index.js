@@ -39,8 +39,8 @@ async function getLettersInfo(userId) {
     message += `GUESS: ${guessNumber}\n`;
     
     // Format the guess with spaces between letters to align with emojis
-    const spacedGuess = attempt.guess.toUpperCase().split('').join('    ');
-    message += `||  ${spacedGuess}||\n`;
+    const spacedGuess = attempt.guess.toUpperCase().split('').join('   ');
+    message += `|| ${spacedGuess}||\n`;
     
     message += `${attempt.result}\n\n`;
   });
